@@ -3,10 +3,10 @@ sudo: required
 
 matrix:
   allow_failures:
-    - os: osx
+    - os: linux
   include:
-    - os: osx
-      env: OSNAME=osx_openresty
+    - os: linux
+      env: OSNAME=linux_openresty
       cache:
         directories:
           - $HOME/Library/Caches/Homebrew
